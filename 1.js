@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { "Content-Type": "text/html; charset=UTF-8" })
         res.end(`<h1>Вы на странице about</h1><br><h3>Вы посещаете ее ${countAbout} раз</h3><br><a href = "/" >Перейти на Главную</а>`)
     } else {
-        res.writeHead(200, { "Content-Type": "text/html; charset=UTF-8" })
+        res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" })
         res.end('<h1>Страница не существует или находится в разработке</h1><a href = "/" >Перейти на Главную</а >')
     }
 
